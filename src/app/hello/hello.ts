@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './hello.scss',
 })
 export class Hello {
-
+  // Interpolation
+  protected title = 'Welcome to Modern Angular!';
+  // Property binding
+  protected isDisabled = false;
+  // Event binding
+  onClick() {
+    console.log('Button clicked!');
+    this.isDisabled = !this.isDisabled;
+  }
 }
